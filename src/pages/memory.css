@@ -1,0 +1,144 @@
+.card-reveal-container {
+  padding: 40px;
+  text-align: center;
+}
+
+.card-reveal-container {
+  background-image: url("/public/images/wood2.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  padding: 10px;
+}
+
+/*button styling */
+.btn-white-outline {
+  background-color: white; 
+  border-radius: 10px; 
+  border: 2px solid black; 
+  color: black; 
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1.6rem; 
+  font-weight: 800; 
+  margin-bottom: 40px;
+  padding: 16px 40px; 
+  transition: all 0.3s ease;
+}
+
+.btn-white-outline:hover {
+  background-color: black; /* invert on hover */
+  color: white;
+}
+
+.card-reveal-row {
+  align-items: flex-start;
+  display: flex;
+  gap: 60px;
+  justify-content: center;
+}
+
+.card-side {
+  align-items: center;
+  background-color: #1a1a2e;
+  border-radius: 12px;
+  border: 2px solid gold;
+  box-shadow: 0 0 15px rgba(128, 0, 128, 0.5);
+  color: white;
+  cursor: pointer;
+  display: flex;
+  height: 600px;
+  justify-content: center;
+  padding: 20px;
+  width: 400px;
+}
+
+.meaning-side {
+  font-size: 1.1rem;
+  text-align: center;
+}
+
+.tarot-card-img {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.placeholder {
+  color: #ccc;
+  font-style: italic;
+}
+
+.instruction-note {
+  font-size: 1rem;
+  font-style: italic;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* mobile layout */
+@media (max-width: 768px) {
+
+  .card-reveal-container {
+    min-height: 100vh;            
+    height: auto;                  
+    background-size: cover !important;
+    background-position: center center;
+  }
+
+  
+  .card-reveal-container {
+    min-height: -webkit-fill-available;
+  }
+
+  html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    background: black; /* avoid white gaps */
+  }
+
+
+  /* 2x2 card rows */
+  .card-reveal-row {
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 30px; /* smaller vertical spacing */
+  }
+
+  
+  .card-side {
+    width: 90%;          
+    max-width: 350px;    
+    height: auto;        
+    padding: 16px;
+  }
+
+  /* Scale cards */
+  .tarot-card-img {
+    width: 100%;
+    height: auto;
+    max-height: none; 
+    object-fit: cover;  /* prevents white bars */
+    display: block;
+  }
+
+  .meaning-side {
+    font-size: 1rem;
+    padding: 10px;
+  }
+
+  /* Button for small screens */
+  .btn-white-outline {
+    font-size: 1.3rem;
+    padding: 14px 32px;
+    margin-bottom: 20px;
+  }
+}
+
+
+

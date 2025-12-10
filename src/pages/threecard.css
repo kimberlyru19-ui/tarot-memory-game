@@ -1,0 +1,117 @@
+/* hover for cards */
+.tarot-card:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+
+/* White button */
+.btn-white-outline {
+  background-color: white;
+  border-radius: 10px;
+  border: 2px solid black;
+  color: black;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1.6rem;
+  font-weight: 800;
+  padding: 16px 40px;
+  transition: all 0.3s ease;
+}
+
+.btn-white-outline:hover {
+  background-color: black;
+  color: white;
+}
+
+/* Reversed card styling */
+.tarot-card-img.reversed {
+  filter: brightness(0.9) saturate(0.8);
+  transform: rotate(180deg);
+}
+
+/* Card row layout */
+.card-row3 {
+  align-items: center;
+  background-image: url("/public/images/wood2.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 40px;
+  height: 750px;
+  justify-content: center;
+}
+
+/* Card image */
+.tarot-card-img {
+  background-color: transparent;
+  border-radius: 10px;
+  height: 500px;
+  margin: 5px;
+  object-fit: cover;
+  width: 300px;
+}
+
+/* individual card container */
+.card {
+  align-items: center;
+  border: none !important;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: auto;
+}
+
+/* Card title */
+.card-name {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+/* Card meaning text */
+.card-meaning {
+  font-size: 0.95rem;
+  margin-top: 5px;
+  max-width: 220px;
+  text-align: center;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+
+  .card-row3 {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding: 10px;
+    height: auto;
+  }
+
+  .card {
+    width: 70%;            
+    max-width: 220px;       
+    margin: 8px auto;       
+    padding: 0;
+  }
+
+  
+  .card .tarot-card-img {
+    width: 100%;
+    aspect-ratio: 3 / 5;    
+    max-height: 280px;      
+    object-fit: cover;
+    border-radius: 10px;
+    margin: 0;
+  }
+
+  .card-name {
+    font-size: 1.1rem;
+  }
+
+  .card-meaning {
+    font-size: 0.9rem;
+    max-width: 180px;
+  }
+}

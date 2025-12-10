@@ -1,0 +1,105 @@
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial;
+}
+
+.home-image {
+  max-width: 100%;  
+  width: 100%;       
+  height: auto;     
+  border-radius: 15px;
+}
+
+.major-arcana {
+  border: 3px solid #000000; 
+  border-radius: 12px; 
+  box-shadow: 0 0 12px rgba(255, 215, 0, 0.6); 
+  padding: 10px;
+  margin: 10px;
+  display: inline-block;
+}
+
+.minor-arcana {
+  border: 3px solid #000000; 
+  border-radius: 12px; 
+  box-shadow: 0 0 12px rgba(255, 215, 0, 0.6); 
+  padding: 10px;
+  margin: 10px;
+  display: inline-block;
+}
+
+.history.text-start {
+  justify-content: left;
+  margin-bottom: 40px;
+}
+
+.tarot-card {
+  background-color: #f0f0f0;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  color: #555;
+  aspect-ratio: 3/5; 
+  overflow: hidden;
+  margin: 10px;
+  transition: transform 0.3s ease;
+}
+
+.tarot-card:hover {
+  transform: scale(1.05);
+}
+
+.tarot-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 12px;
+}
+
+@media (max-width: 768px) {
+  .tarot-card {
+    max-width: 250px;
+    margin: auto;
+  }
+
+  .major-arcana,
+  .minor-arcana {
+    display: block; 
+    margin: 10px auto;
+  }
+
+  .home-image {
+    border-radius: 10px; 
+  }
+}
+
+/* mobile viewing */
+@media (max-width: 768px) {
+
+  .card-img-top {
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+    border-radius: 10px;
+  }
+
+  .card-body {
+    padding: 10px;
+    font-size: 0.9rem;
+  }
+
+  .card {
+    margin: 0 auto;
+    padding: 5px;
+  }
+}
