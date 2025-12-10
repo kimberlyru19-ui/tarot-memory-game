@@ -220,11 +220,12 @@ img {
   }
 
   .card {
-    width: 90%;               /* cards scale to screen width */
+    width: 95px !important;               /* cards scale to screen width */
     max-width: 250px;         /* consistent size */
-    margin: 0 auto;
-    border-radius: 12px;
+    margin: 5px !important;
+    border-radius: 1px;
     overflow: hidden;
+
   }
 
   .card img {
