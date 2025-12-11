@@ -1,4 +1,5 @@
 import tarotCards from "../assets/tarotCards.json";
+import memory from "./memory.css";  
 
 // tarot cards with meanings
 function Cards() {

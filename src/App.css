@@ -82,24 +82,3 @@ body {
   }
 }
 
-/* mobile viewing */
-@media (max-width: 768px) {
-
-  .card-img-top {
-    width: 90%;
-    height: auto;
-    margin: 0 auto;
-    display: block;
-    border-radius: 10px;
-  }
-
-  .card-body {
-    padding: 10px;
-    font-size: 0.9rem;
-  }
-
-  .card {
-    margin: 0 auto;
-    padding: 5px;
-  }
-}
