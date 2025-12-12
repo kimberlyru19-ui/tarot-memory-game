@@ -54,7 +54,7 @@
 }
 
 /* individual card container */
-.card {
+.card3 {
   align-items: center;
   border: none !important;
   display: flex;
@@ -78,6 +78,19 @@
   text-align: center;
 }
 
+.card-info-box {
+  background: white;
+  border-radius: 10px;
+  border: 2px solid #ddd;
+  margin-top: 12px;
+  padding: 12px;
+  width: 100%;
+  max-width: 260px;
+  text-align: center;
+}
+
+
+
 /* Mobile responsiveness */
 @media (max-width: 768px) {
 
@@ -89,29 +102,29 @@
     height: auto;
   }
 
-  .card {
-    width: 70%;            
-    max-width: 220px;       
+  .card3 {
+    width: 65%;            
+    max-width: 200px;       
     margin: 8px auto;       
     padding: 0;
   }
 
   
-  .card .tarot-card-img {
+  .card3 .tarot-card-img {
     width: 100%;
     aspect-ratio: 3 / 5;    
-    max-height: 280px;      
-    object-fit: cover;
+    max-height: 320px;      
+    object-fit: contain;
     border-radius: 10px;
     margin: 0;
   }
 
   .card-name {
-    font-size: 1.1rem;
+    font-size: 1.3rem;
   }
 
   .card-meaning {
-    font-size: 0.9rem;
+    font-size: 1.0rem;
     max-width: 180px;
   }
 }

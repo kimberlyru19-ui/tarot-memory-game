@@ -44,7 +44,7 @@ function Reading3() {
       </button>
 
       {/* past */}
-      <div className="card">
+      <div className="card3">
         {reading ? (
           <>
             <img
@@ -52,6 +52,7 @@ function Reading3() {
               alt={reading.past.name}
               className={`tarot-card-img ${reading.past.isReversed ? "reversed" : ""}`}
             />
+            <div className="card-info-box">
             <h3 className="card-name">
               {reading.past.name}
               {reading.past.isReversed && " (Reversed)"}
@@ -59,6 +60,7 @@ function Reading3() {
             <p className="card-meaning">
               {reading.past.isReversed ? reading.past.reversed : reading.past.upright}
             </p>
+            </div>
           </>
         ) : (
           <img src="/images/past.png" alt="Placeholder Past" className="tarot-card-img" />
@@ -66,7 +68,7 @@ function Reading3() {
       </div>
 
       {/* Present */}
-      <div className="card">
+      <div className="card3">
         {reading ? (
           <>
             <img
@@ -74,6 +76,7 @@ function Reading3() {
               alt={reading.present.name}
               className={`tarot-card-img ${reading.present.isReversed ? "reversed" : ""}`}
             />
+            <div className="card-info-box">
             <h3 className="card-name">
               {reading.present.name}
               {reading.present.isReversed && " (Reversed)"}
@@ -81,6 +84,7 @@ function Reading3() {
             <p className="card-meaning">
               {reading.present.isReversed ? reading.present.reversed : reading.present.upright}
             </p>
+            </div>
           </>
         ) : (
           <img src="/images/present.png" alt="Placeholder Present" className="tarot-card-img" />
@@ -88,7 +92,7 @@ function Reading3() {
       </div>
 
       {/* Future */}
-      <div className="card">
+      <div className="card3">
         {reading ? (
           <>
             <img
@@ -96,6 +100,7 @@ function Reading3() {
               alt={reading.future.name}
               className={`tarot-card-img ${reading.future.isReversed ? "reversed" : ""}`}
             />
+            <div className="card-info-box">
             <h3 className="card-name">
               {reading.future.name}
               {reading.future.isReversed && " (Reversed)"}
@@ -103,6 +108,7 @@ function Reading3() {
             <p className="card-meaning">
               {reading.future.isReversed ? reading.future.reversed : reading.future.upright}
             </p>
+            </div>
           </>
         ) : (
           <img src="/images/future.png" alt="Placeholder Future" className="tarot-card-img" />
