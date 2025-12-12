@@ -38,6 +38,7 @@ body {
 .history.text-start {
   justify-content: left;
   margin-bottom: 40px;
+  padding-bottom: 10px;
 }
 
 .tarot-card {
